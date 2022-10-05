@@ -1,0 +1,116 @@
+
+  
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+    background: url(images/bg-desktop.svg) no-repeat fixed;
+    background-color: hsl(257, 40%, 49%);
+    
+  }
+  header {
+    padding: 20px 10px;
+    margin: 20px 50px 20px;
+  }
+  /* page content  */
+  main {
+    display: flex;
+    padding: 0 50px;
+  }
+  /* for the image  */
+  div#image > img {
+    max-width: 100%;
+    height: auto;
+  }
+  #image {
+    max-width: 600px;
+  }
+  /* text heading and content  */
+  #text {
+    padding: 10px 80px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Open Sans';
+    color: white;
+    font-weight: 400;
+    max-width: 550px;
+  }
+  /* text heading  */
+  h1#heading {
+    
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: 'Poppins';
+  }
+  /* register button  */
+  button[title="register"] {
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 1em;
+    padding: 10px 50px;
+    box-shadow: 0 0 5px black;
+    font-family: 'Open Sans';
+  }
+  button[title="register"]:hover {
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+      cursor: pointer;
+  }
+  /* css properties for icons */
+  footer {
+    float: right;
+    padding: 0 100px;
+  }
+  footer > button {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+  }
+  footer > button:hover {
+      color: hsl(300, 69%, 71%);
+      border-color: hsl(300, 69%, 71%);
+      cursor: pointer;
+      }
+  footer > button > i {
+    scale: 1.5;
+  }
+/* css properties for mobile device */
+@media only screen and (max-width: 768px) {
+  body {
+    background: url(images/bg-mobile.svg) no-repeat fixed;
+    background-color: hsl(257, 40%, 49%);
+    padding: 0;
+    margin: 0;
+  }
+  main {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  img {
+    width: 100%;
+  }
+  button[title="register"] {
+
+    padding: 10px 80px;
+    margin: 20px;
+  }
+  #text {
+    padding: 60px 0px;
+    text-align: center;
+}
+footer {
+  float: none;
+  text-align: center;
+  padding-bottom: 50px;
+}
+}
