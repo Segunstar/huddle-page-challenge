@@ -1,0 +1,111 @@
+
+ * {
+  box-sizing: border-box;
+ } 
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+    background: url(images/bg-desktop.svg) no-repeat fixed;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans';
+  }
+  header {
+    padding: 2.5%;
+    margin: 2%;
+  }
+  main {
+    padding: 0% 5%;
+  }
+  main::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  #image {
+    margin-right: 5%;
+  }
+  h1 {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: capitalize;
+  }
+  article {
+    font-family: 'Open Sans';
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .col-1 {width: 50%;}
+  .col-2 {width: 39%;}
+
+ /* register button  */
+ button[title="register"] {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 1em;
+  padding: 10px 50px;
+  box-shadow: 0 0 5px black;
+  font-family: 'Open Sans';
+}
+button[title="register"]:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+/* css properties for icons */
+footer {
+  float: right;
+  padding: 4% 5% 0;
+  clear: none;
+}
+footer > button {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+footer > button:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    }
+footer > button > i {
+  scale: 1.8;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    background: url(images/bg-mobile.svg) no-repeat fixed;
+    background-color: hsl(257, 40%, 49%);
+    text-align: center;
+   
+  }
+  
+  [class*="col-"] {
+    width: 100%;
+  }
+  button[title="register"] {
+
+    padding: 3% 20%;
+    margin: 5%;
+    border-radius: 40px;
+  }
+  footer {
+    margin: 20%;
+    float: none;
+   text-align: center;
+   
+  }
+}
